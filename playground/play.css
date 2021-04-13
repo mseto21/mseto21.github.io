@@ -1,0 +1,26 @@
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#scruffs{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 180px; //game height - character height - block height (200 - 50 - 20)
+left: 480px; //game width - block width (500 - 20)
+    /*animation: block 1s infinite linear;*/
+}
+
+@keyframes jump{
+    0%{top: 180px;}
+    30%{top: 130px;}
+    70%{top: 130px;}
+    100%{top: 180px;}
+}
+
+.animate{
+    animation: jump 1000ms linear;
+}
