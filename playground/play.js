@@ -4,7 +4,6 @@ var scruffs = document.getElementById("scruffs");
 var labelScore = document.getElementById("scruffs_score");
 var score = 0;
 
-//scruffs.addEventListener("click",function(){jump(character)}); // click and call jump()
 scruffs.addEventListener("mouseover",function() {jump(scruffs)});
 
 function jump(cType){
@@ -18,17 +17,3 @@ function jump(cType){
 function removeJump(cType){
     cType.classList.remove("animate");
 }
-
-// function checkDead() {
-//     let characterTop = parseInt(window.getComputedStyle(character)
-//         .getPropertyValue("top"));
-//     let blockLeft = parseInt(window.getComputedStyle(block)
-//         .getPropertyValue("left"));
-//     if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
-//         block.style.animation = "none";
-//        // alert("Game over");
-//         block.style.animation = "block 5s linear";
-//     }
-// }
-//
-// setInterval(checkDead, 10); // 10ms
